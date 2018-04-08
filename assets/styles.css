@@ -1,0 +1,262 @@
+
+.clearfix {
+    display:block;
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    line-height:0;
+    height:0;
+}
+
+html[xmlns] .clearfix{
+    display: block;
+}
+
+* html .clearfix {
+    height:1%;
+}
+
+
+
+/* -------- Floating -------- */
+
+.fl-l{
+    float: left;
+}
+.fl-r{
+    float: right;
+}
+
+/* -------- Text Align -------- */
+.txt-l{
+    text-align: left;
+}
+.txt-r{
+    text-align: right;
+}
+
+.txt-c{
+    text-align: center !important;
+}
+
+/* ----- Font Size ----- */
+.font-13{
+    font-size: 13px !important;
+}
+.font-12{
+    font-size: 12px !important;
+}
+.font-14{
+    font-size: 14px !important;
+}
+.font-16{
+    font-size: 16px !important;
+}
+.font-18{
+    font-size: 18px !important;
+}
+
+/* ---- Margin ----- */
+.mr-t-3{
+    margin-top: 3px !important;
+}
+.mr-t-5{
+    margin-top: 5px !important;
+}
+
+.mr-t-15{
+    margin-top: 15px !important;
+}
+/****  Width  *****/
+.wd-70p{
+    width: 70%;
+}
+.wd-85p{
+    width: 84.5%;
+}
+.wd-88pc{
+    width: 88% !important;
+}
+.wd-90p{
+    width: 89.5%;
+}
+.wd-100pc{
+    width: 99.9% !important;
+}
+.wd-25pc{
+    width: 25%;
+}
+.wd-27pc{
+    width: 27%;
+}
+.wd-30pc{
+    width: 30%;
+}
+
+.border-1{
+    border: 0px;
+}
+/* ----- Page Structure -----*/
+#wrapper, #header, #main-content{
+    background-color: #F0F0F0;
+    width: 100%;
+}
+#wrapper{
+    padding-bottom: 100px;
+}
+#footer{
+    width: 100%;
+    background-color: #2c3e50;
+}
+#header{
+    /*text-align: center;
+    padding-top: 20px;*/
+}
+#left-column{
+    background-color: #F0F0F0;
+    width: 22%;
+    float: left;
+    min-height: 600px;
+    padding-top: 15px;
+}
+#right-column{
+    background-color: #FEFEFE;
+    width: 78%;
+    float: left;
+    min-height: 700px;
+    border-radius: 10px;
+}
+#right-column #content{
+    background-color: #FEFEFE;
+    padding: 0px 15px;
+    min-height: 700px;
+    border-radius: 10px;
+}
+
+
+/* ----- Message Box --------*/
+.message{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.message.error{
+    color: #bd4643;
+    background-color: #f9e8e8;
+    border: 1px solid #ebccd1;
+}
+
+.message.success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+/* Heading */
+h3.title{
+    border-bottom: 3px solid #aaa;
+    padding-bottom: 10px;
+}
+
+.btn{
+    padding: 6px 25px;
+}
+
+.sql-error{
+    background: #fbe1e1;
+    padding: 10px 30px;
+    border: 1px solid #b70909;
+}
+.sql-error p{
+    margin: 5px 0px;
+}
+.sql-error p u{
+    text-decoration: underline;
+    color: red;
+}
+
+#body-background{
+    background-color: lightcoral;
+}
+
+#logo{
+    width: 150px;
+
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+#logo img{
+    width: 100%;
+}
+
+.color{
+    background-color: linear-gradient (rgb(121, 5, 181), rgb(27, 175, 141));
+    background-image: url("details/dna_2.jpg");
+}
+
+/* -- Footer Css --*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    background:rgba(19,110,176,0.70); /* ata transparent background color*/
+}
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer .container .text-muted {
+    margin: 20px 0;
+    color: #FFF;
+}
+.footer .container p, .footer .container a, .footer .container li{
+    color: #FFF !important;
+}
+.footer .container p{
+    line-height: 50px;
+    margin-bottom: 0px;
+}
+
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#left-column ul{
+    padding-left: 0px;
+    border-left: 5px solid #fcfcfc;
+}
+#left-column ul li{
+    list-style: none;
+
+    border-bottom: 1px solid #fcfcfc;
+
+    /*padding: 3px 0px;
+    padding-left: 20px;*/
+}
+#left-column ul li:last-child{
+    border-bottom: 0px;
+}
+#left-column ul li a{
+    display: block;
+    padding: 3px 0px 3px 20px;
+}
+#left-column ul li li a{
+    padding: 3px 0px 3px 40px;
+}
+#left-column ul li a:hover{
+    background-color: #fefefe;
+
+}
